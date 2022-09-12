@@ -10,6 +10,7 @@ class mot_class():
     def __get_mot_file(self):
         Directory = os.path.dirname(__file__)
         mot_directory = os.path.join(Directory, 'MOT.tsv')
+        
         self.mot_file = open(mot_directory, 'r')
         
         mot_file = self.mot_file

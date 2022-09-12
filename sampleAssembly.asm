@@ -1,0 +1,5 @@
+START 200
+ADD AREG , BREG
+ADD AREG , ='3'
+
+MUL CREG , ='2'

@@ -4,8 +4,8 @@ ADD AREG , ='3'
 LTORG
 
 ADD AREG , ='32'
-ADD AREG , ='33'
-SUB AREG , ='22'
+MUL BREG , ='33'
+SUB DREG , ='22'
 ADD AREG , ='11'
 LTORG
 #hello

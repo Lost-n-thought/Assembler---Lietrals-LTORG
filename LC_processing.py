@@ -31,7 +31,7 @@ def LC_processing(final_asm_file_gen):
                 if ar_class._is_literal(asm_dict_list[1][op]):
                     lit_value = ar_class.literal_value(asm_dict_list[1][op])
                     op1 = "(s,{})".format(LT.get_literal(lit_value))
-                    asm_dict_list[0][opIC]
+                    asm_dict_list[0][opIC] = op1
                 else:
                     op1 = "(r,{})".format(ar_class.registers.index(asm_dict_list[1][op]))   
                     asm_dict_list[0][opIC] = op1

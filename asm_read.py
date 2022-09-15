@@ -20,7 +20,7 @@ class asm():
                 continue
             line = line.rstrip()
             line = re.split('\W+',line)
-            properties_dict = {'line_number': line_no}
+            properties_dict = {'line_number': line_no +1}
             line_dict = dict(zip(self.asm_field, line))
             line_dict['Operand1'] = line_dict.get('Operand1')
             line_dict['Operand2'] = line_dict.get('Operand2')
@@ -45,7 +45,7 @@ class asm():
             return True
         else:
             return False
-    def literal_value(str : str):     
+    def literal_value(self ,str : str):     
         return int(str)
     
     def _is_valid_operand(self, word : str):
